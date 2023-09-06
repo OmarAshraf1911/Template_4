@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page {
+  background-color: #f1f5f9;
+  min-height: 100vh;
 }
