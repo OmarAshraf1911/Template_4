@@ -170,6 +170,27 @@ ul {
   margin-left: 15px;
 }
 
-.page h1 {}
+.page h1 {
+  margin: 20px 20px 40px;
+}
+
+.page h1::before,
+.page h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 3px;
+  bottom: -10px;
+}
+
+.page h1::before {
+  background-color: white;
+  width: 120px;
+}
+
+.page h1::after {
+  background-color: black;
+  width: 60px;
+}
 
 /* End content */
