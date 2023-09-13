@@ -226,6 +226,10 @@ ul {
 /* End content */
 
 /* start welcome */
+.welcome {
+  overflow: hidden;
+}
+
 .welcome .intro img {
   width: 200px;
   margin-bottom: -10px;
