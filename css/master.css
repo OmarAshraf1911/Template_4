@@ -209,4 +209,26 @@ ul {
   width: 60px;
 }
 
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media(max-width:767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 /* End content */
+
+/* start welcome */
+.welcome .intro img {
+  width: 200px;
+  margin-bottom: -10px;
+}
+
+/* end welcome */
