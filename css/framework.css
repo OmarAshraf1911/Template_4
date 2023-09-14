@@ -91,12 +91,20 @@
   margin-bottom: 20px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-fit {
   width: fit-content;
+}
+
+.b-none {
+  border: none;
 }
 
 /* End padding and margin */
