@@ -139,6 +139,10 @@
   color: white;
 }
 
+.outline-blue {
+  outline-color: var(--blue-color);
+}
+
 /* End color */
 
 
@@ -156,6 +160,10 @@
 
 .fs-14 {
   font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
 }
 
 @media(max-width:767px) {
@@ -184,6 +192,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
 }
 
 /* End componant */
