@@ -339,7 +339,6 @@ ul {
   border-style: solid;
   position: absolute;
   bottom: -10px;
-
   left: 50%;
   transform: translateX(-50%);
 }
@@ -372,3 +371,22 @@ ul {
 }
 
 /* End target */
+/* Start Tickets Statistics widget  */
+
+.tickets .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.tickets .content .box {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 20px 0;
+}
+
+.tickets .content .box h2 {
+  margin: 10px 0;
+}
+
+/* End Tickets Statistics widget  */
