@@ -87,12 +87,24 @@
   margin-top: 20px;
 }
 
+.mr-0 {
+  margin-right: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
 }
 
 .w-full {
@@ -182,6 +194,10 @@
   text-align: center;
 }
 
+.fs-12 {
+  font-size: 12px;
+}
+
 .fs-14 {
   font-size: 14px;
 }
@@ -192,6 +208,10 @@
 
 .fs-25 {
   font-size: 25px;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 .fw-bold {
