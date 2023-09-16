@@ -427,3 +427,18 @@ ul {
 }
 
 /* End Latest News wedgit */
+
+.tasks .content .rows:not(:last-child) {
+  margin: 0 0 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tasks .content .rows .deleted {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.tasks .content .rows i {
+  transition: var(--main-transition);
+}
