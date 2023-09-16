@@ -428,6 +428,7 @@ ul {
 
 /* End Latest News wedgit */
 
+/* Start Latest Tasks wedgit */
 .tasks .content .rows:not(:last-child) {
   margin: 0 0 20px;
   padding-bottom: 20px;
@@ -442,3 +443,10 @@ ul {
 .tasks .content .rows i {
   transition: var(--main-transition);
 }
+
+.tasks .content .rows i:hover {
+  color: var(--red-color);
+  cursor: pointer;
+}
+
+/* End Latest Tasks wedgit */
