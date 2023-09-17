@@ -91,8 +91,20 @@
   margin-right: 0;
 }
 
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
 .ml-0 {
   margin-left: 0;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .mb-20 {
@@ -214,13 +226,18 @@
   font-size: 18px;
 }
 
+.fs-20 {
+  font-size: 20px;
+}
+
 .fs-25 {
   font-size: 25px;
 }
 
-.fs-20 {
-  font-size: 20px;
+.fs-30 {
+  font-size: 30px;
 }
+
 
 .fw-bold {
   font-weight: bold;
