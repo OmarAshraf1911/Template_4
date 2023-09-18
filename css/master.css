@@ -459,3 +459,67 @@ ul {
 }
 
 /* End Lasted Uploads wedgit */
+
+/* Start Last Project Progress  */
+.projects ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  background-color: var(--blue-color);
+  height: 100%;
+}
+
+.projects ul li::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  border-radius: 50%;
+  margin-right: 15px;
+  z-index: 1;
+}
+
+.projects ul li.done::before {
+  background-color: var(--blue-alt-color);
+}
+
+.projects ul li.current::before {
+  animation: flasing 0.8s infinite alternate;
+}
+
+.projects img {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  animation: up 1s infinite alternate;
+}
+
+/* End Last Project Progress  */
+
+/* Start animation */
+@keyframes flasing {
+  from {
+    background-color: var(--blue-color);
+  }
+
+  to {
+    background-color: white;
+  }
+}
+
+@keyframes up {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: 50px;
+  }
+}
+
+/* End animation */
