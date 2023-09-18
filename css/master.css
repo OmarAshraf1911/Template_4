@@ -450,8 +450,12 @@ ul {
 }
 
 /* End Latest Tasks wedgit */
+
+/* Start Lasted Uploads wedgit */
 .uploads .data .rows:not(:last-child) {
   margin: 0 0 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
+
+/* End Lasted Uploads wedgit */
