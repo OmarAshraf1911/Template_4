@@ -525,6 +525,29 @@ ul {
 
 /* End reminders */
 
+/* Start posts wedgit */
+.posts .top .avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.posts .post-content {
+  border-top: 2px solid #EEE;
+  border-bottom: 2px solid #EEE;
+  line-height: 1.7;
+}
+
+.posts .post-stats .heart:hover {
+  cursor: pointer;
+  color: var(--red-color);
+}
+
+.posts .post-stats .comments:hover {
+  cursor: pointer;
+  color: var(--blue-color);
+}
+
+/* End posts wedgit */
 
 /* Start animation */
 @keyframes flasing {
