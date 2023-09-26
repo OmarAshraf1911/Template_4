@@ -566,14 +566,14 @@ ul {
   transform: rotate(5deg);
 }
 
-.social-media .twitter {
-  background-color: rgb(29 161 242 / 20%);
-  color: #1da1f2;
+.social-media .github {
+  background-color: rgb(51 51 51 / 30%);
+  color: #333;
 }
 
-.social-media .twitter i,
-.social-media .twitter a {
-  background-color: #1da1f2;
+.social-media .github i,
+.social-media .github a {
+  background-color: #333;
 }
 
 .social-media .facebook {
