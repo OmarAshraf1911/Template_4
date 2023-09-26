@@ -571,7 +571,7 @@ ul {
 }
 
 .social-media .box a:hover {
-  font-size: 18px;
+  transform: rotate(3deg);
 }
 
 .social-media .github {
