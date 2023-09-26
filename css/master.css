@@ -566,6 +566,14 @@ ul {
   transform: rotate(5deg);
 }
 
+.social-media .box a {
+  transition: 0.3s;
+}
+
+.social-media .box a:hover {
+  font-size: 18px;
+}
+
 .social-media .github {
   background-color: rgb(51 51 51 / 30%);
   color: #333;
