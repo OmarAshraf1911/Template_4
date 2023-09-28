@@ -615,6 +615,53 @@ ul {
 }
 
 /* End Social Media */
+
+/* Start projects */
+.project .responsive-table {
+  overflow-x: auto;
+}
+
+.project table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+
+.project thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.project table td {
+  padding: 15px;
+}
+
+.project table td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: var(--main-transition);
+}
+
+.project table tbody tr td:last-child {
+  border-right: 1px solid #eee;
+}
+
+.project tbody tr:hover td {
+  background-color: #faf7f7;
+}
+
+.project table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+
+.project table img:not(:first-child) {
+  margin-left: -20px;
+}
+
+/* End projects */
 /* Start animation */
 @keyframes flasing {
   from {
