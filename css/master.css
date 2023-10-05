@@ -679,7 +679,7 @@ ul {
 .settings-page textarea {
   border: 1px solid #ccc;
   resize: none;
-  min-height: 150px;
+  min-height: 130px;
 }
 
 .settings-page .email {
@@ -687,21 +687,32 @@ ul {
   width: calc(100% - 81px);
 }
 
-.settings-page a {
+.settings-page a.email-b {
   color: white;
   background-color: var(--blue-color);
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 6px;
 }
 
-.settings-page a:hover {
+.settings-page a.email-b:hover {
   background-color: var(--blue-alt-color);
+  transition: var(--main-transition);
+}
+
+.settings-page a.device {
+  color: white;
+  background-color: var(--grey-color);
+}
+
+.settings-page a.device:hover {
+  background-color: rgb(90, 87, 87);
   transition: var(--main-transition);
 }
 
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
+  display: none;
 }
 
 .toggle-switch {

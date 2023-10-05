@@ -135,25 +135,30 @@
   margin-left: auto;
 }
 
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.mb-15 {
-  margin-bottom: 15px;
-}
-
-.mb-10 {
-  margin-bottom: 10px;
+.mb-5 {
+  margin-bottom: 5px;
 }
 
 .mb-8 {
   margin-bottom: 8px;
 }
 
-.mb-5 {
-  margin-bottom: 5px;
+.mb-10 {
+  margin-bottom: 10px;
 }
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 
 .w-full {
   width: 100%;
@@ -285,6 +290,10 @@
 
 .fw-bold {
   font-weight: bold;
+}
+
+.lh-7 {
+  line-height: 1.7;
 }
 
 @media(max-width:767px) {
