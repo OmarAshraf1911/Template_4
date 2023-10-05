@@ -139,6 +139,10 @@
   margin-bottom: 20px;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -324,6 +328,10 @@
 .btn-shape {
   padding: 4px 10px;
   border-radius: 6px;
+}
+
+.border-ccc {
+  border: 1px solid #ccc;
 }
 
 /* End componant */

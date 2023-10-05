@@ -682,6 +682,23 @@ ul {
   min-height: 150px;
 }
 
+.settings-page .email {
+  display: inline-flex;
+  width: calc(100% - 81px);
+}
+
+.settings-page a {
+  color: white;
+  background-color: var(--blue-color);
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+
+.settings-page a:hover {
+  background-color: var(--blue-alt-color);
+  transition: var(--main-transition);
+}
+
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
