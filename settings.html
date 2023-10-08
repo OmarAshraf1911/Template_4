@@ -198,30 +198,71 @@
           <p class="c-grey">Show/Hide wedgit</p>
           <div class="control d-flex align-center mb-15">
             <input type="checkbox" id="one" checked>
-            <label for="one">Quick draft</label>
+            <label for="one" class="fs-20">Quick draft</label>
           </div>
           <div class="control d-flex align-center mb-15">
             <input type="checkbox" id="two" checked>
-            <label for="two">Yearly target</label>
+            <label for="two" class="fs-20">Yearly target</label>
           </div>
           <div class="control d-flex align-center mb-15">
             <input type="checkbox" id="three">
-            <label for="three">Ticket Statistics</label>
+            <label for="three" class="fs-20">Ticket Statistics</label>
           </div>
           <div class="control d-flex align-center mb-15">
             <input type="checkbox" id="four">
-            <label for="four">Latest news</label>
+            <label for="four" class="fs-20">Latest news</label>
           </div>
           <div class="control d-flex align-center mb-15">
             <input type="checkbox" id="five" checked>
-            <label for="five">Latest taskes</label>
+            <label for="five" class="fs-20">Latest taskes</label>
           </div>
           <div class="control d-flex align-center mb-5">
             <input type="checkbox" id="six">
-            <label for="six">Top search items</label>
+            <label for="six" class="fs-20">Top search items</label>
           </div>
         </div>
         <!-- End Wedgit Control box -->
+        <!-- Start Backup Manager box -->
+        <div class="backup-control p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Backup Manager</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">Control Backup Time And Location</p>
+          <div class="date d-flex align-center mb-15">
+            <input type="radio" name="time" id="daily" checked />
+            <label for="daily">Daily</label>
+          </div>
+          <div class="date d-flex align-center mb-15">
+            <input type="radio" name="time" id="weekly" />
+            <label for="weekly">Weekly</label>
+          </div>
+          <div class="date d-flex align-center mb-15">
+            <input type="radio" name="time" id="monthly" />
+            <label for="monthly">Monthly</label>
+          </div>
+          <div class="servers d-flex align-center txt-c">
+            <input type="radio" name="servers" id="server-one" />
+            <div class="server mb-15 rad-10 w-full">
+              <label class="d-block m-15" for="server-one">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                Megaman
+              </label>
+            </div>
+            <input type="radio" name="servers" id="server-two" checked />
+            <div class="server mb-15 rad-10 w-full">
+              <label class="d-block m-15" for="server-two">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                Zero
+              </label>
+            </div>
+            <input type="radio" name="servers" id="server-three" />
+            <div class="server mb-15 rad-10 w-full">
+              <label class="d-block m-15" for="server-three">
+                <i class="fa-solid fa-server d-block mb-10"></i>
+                Sigma
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- End Backup Manager box -->
       </div>
     </div>
   </div>

@@ -810,6 +810,75 @@ ul {
   transform: scale(1);
 }
 
+.backup-control input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.backup-control .date label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.backup-control .date label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  border-radius: 50%;
+}
+
+.backup-control .date label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--blue-color);
+  border-radius: 50%;
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.backup-control .date input[type="radio"]:checked+label::before {
+  border-color: var(--blue-color);
+}
+
+.backup-control .date input[type="radio"]:checked+label::after {
+  transform: scale(1);
+}
+
+.backup-control .servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .backup-control .servers {
+    flex-wrap: wrap;
+  }
+}
+
+.backup-control .servers .server {
+  border: 2px solid #eee;
+  position: relative;
+}
+
+.backup-control .servers .server label {
+  cursor: pointer;
+}
+
+.backup-control .servers input[type="radio"]:checked+.server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;

@@ -83,6 +83,10 @@
   margin: 0;
 }
 
+.m-15 {
+  margin: 15px;
+}
+
 .mt-0 {
   margin-top: 0;
 }
@@ -273,6 +277,10 @@
 
 .fs-18 {
   font-size: 18px;
+}
+
+.fs-19 {
+  font-size: 19px;
 }
 
 .fs-20 {
