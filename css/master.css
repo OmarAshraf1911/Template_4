@@ -758,21 +758,57 @@ ul {
   color: #333;
 }
 
-.Wedgit-control .control label {
-  margin-left: 30px;
+.wedgit-control .control input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.wedgit-control .control label {
+  padding-left: 30px;
   position: relative;
   cursor: pointer;
 }
 
-.Wedgit-control .control label::before {
+.wedgit-control .control label::before {
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
   border: 2px solid #ccc;
+  width: 14px;
+  height: 14px;
+  margin-top: -9px;
+  border-radius: 4px;
 }
 
-.Wedgit-control .control label::after {}
+.wedgit-control .control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+
+.wedgit-control .control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-color);
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  color: white;
+  transform: scale(0) rotate(360deg);
+  transition: var(--main-transition);
+}
+
+.wedgit-control .control input[type="checkbox"]:checked+label::after {
+  transform: scale(1);
+}
 
 .toggle-checkbox {
   -webkit-appearance: none;
