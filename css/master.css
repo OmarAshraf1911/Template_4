@@ -709,6 +709,71 @@ ul {
   transition: var(--main-transition);
 }
 
+.settings-page .social-boxs i {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px 0 0 6px;
+  margin-left: 0;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  transition: var(--main-transition);
+}
+
+.settings-page .social-boxs input {
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #ccc;
+}
+
+.settings-page .social-boxs input.one {
+  outline-color: #1da1f2;
+}
+
+.settings-page .social-boxs input.two {
+  outline-color: blue;
+}
+
+.settings-page .social-boxs input.three {
+  outline-color: #0077b5;
+}
+
+.settings-page .social-boxs input.four {
+  outline-color: #333;
+}
+
+.settings-page .social-boxs>div:focus-within i.one {
+  color: #1da1f2;
+}
+
+.settings-page .social-boxs>div:focus-within i.two {
+  color: blue;
+}
+
+.settings-page .social-boxs>div:focus-within i.three {
+  color: #0077b5;
+}
+
+.settings-page .social-boxs>div:focus-within i.four {
+  color: #333;
+}
+
+.Wedgit-control .control label {
+  margin-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.Wedgit-control .control label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border: 2px solid #ccc;
+}
+
+.Wedgit-control .control label::after {}
+
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
