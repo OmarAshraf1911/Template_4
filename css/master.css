@@ -924,6 +924,45 @@ ul {
 }
 
 /* End settings */
+/* Start profile */
+@media(max-width:767px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
+}
+
+.profile-page .avatar {
+  width: 300px;
+}
+
+@media(min-width:768px) {
+  .profile-page .avatar {
+    border-right: 2px solid #eee;
+  }
+}
+
+.profile-page .avatar>img {
+  width: 120px;
+  height: 120px;
+}
+
+.profile-page .avatar .level {
+  height: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+
+.profile-page .avatar .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+
+/* End profile */
 /* Start animation */
 @keyframes flasing {
   from {
