@@ -977,6 +977,49 @@ ul {
   padding: 10px 0 0;
 }
 
+.profile-page .info .box .toggle-switch {
+  height: 20px;
+}
+
+@media(max-width:767px) {
+  .profile-page .info .box .toggle-switch {
+    margin: auto;
+  }
+}
+
+.profile-page .info .box .toggle-switch::before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+
+.profile-page .info .box .toggle-checkbox:checked+.toggle-switch::before {
+  left: 62px;
+}
+
+.data .skills {
+  min-width: 350px;
+}
+
+@media(max-width: 767px) {
+  .profile-page .data {
+    flex-direction: column;
+  }
+}
+
+.data .skills li:not(:last-child) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeaea;
+}
+
+.data .skills span {
+  padding: 5px 5px;
+  background-color: #eeeaea;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
 /* End profile */
 /* Start animation */
 @keyframes flasing {
