@@ -962,6 +962,21 @@ ul {
   background-color: var(--blue-color);
 }
 
+.profile-page .info .box {
+  flex-wrap: wrap;
+  transition: var(--main-transition);
+  border-bottom: 1px solid #EEE;
+}
+
+.profile-page .info .box:hover {
+  background-color: #f9f9f9;
+}
+
+.profile-page .info .box>div {
+  min-width: 200px;
+  padding: 10px 0 0;
+}
+
 /* End profile */
 /* Start animation */
 @keyframes flasing {
