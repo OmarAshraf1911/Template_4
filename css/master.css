@@ -997,27 +997,69 @@ ul {
   left: 62px;
 }
 
-.data .skills {
+.other-data .skills {
   min-width: 350px;
 }
 
 @media(max-width: 767px) {
-  .profile-page .data {
+  .profile-page .other-data {
     flex-direction: column;
   }
 }
 
-.data .skills li:not(:last-child) {
+.other-data .skills li:not(:last-child) {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eeeaea;
 }
 
-.data .skills span {
+.other-data .skills span {
   padding: 5px 5px;
   background-color: #eeeaea;
   border-radius: 6px;
   margin-right: 5px;
+}
+
+.profile-page .skills {
+  flex-grow: 1;
+}
+
+.profile-page .activites {
+  flex-grow: 2;
+}
+
+.profile-page .activity:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-page .activity img {
+  width: 85px;
+  height: 64px;
+  margin-right: 20px;
+}
+
+@media(min-width:768px) {
+  .profile-page .activity .date {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+@media(max-width:767px) {
+  .profile-page .activity {
+    flex-direction: column;
+  }
+
+  .profile-page .activity img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .profile-page .activity .date {
+    margin-top: 15px;
+  }
 }
 
 /* End profile */
