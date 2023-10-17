@@ -1063,6 +1063,96 @@ ul {
 }
 
 /* End profile */
+
+/* Start project-page */
+.project-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media(max-width:767px) {
+  .project-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+.project-page .project .date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.project-page .project {
+  font-weight: normal;
+}
+
+.project-page .project .team {
+  position: relative;
+  min-height: 80px;
+}
+
+.project-page .project .team a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.project-page .project .team a:nth-child(2) {
+  left: 25px;
+}
+
+.project-page .project .team a:nth-child(3) {
+  left: 50px;
+}
+
+.project-page .project .team a:nth-child(4) {
+  left: 75px;
+}
+
+.project-page .project .team a:nth-child(5) {
+  left: 100px;
+}
+
+.project-page .project .team a:hover {
+  z-index: 15;
+}
+
+.project-page .project .team img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.project-page .project .do {
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+@media(max-width:767px) {
+  .project-page .project .do {
+    flex-direction: column;
+  }
+}
+
+.project-page .project .do span {
+  padding: 3px 8px;
+  margin-left: 5px;
+  width: fit-content;
+}
+
+@media(max-width:767px) {
+  .project-page .project .do span:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+/* End project-page */
+
 /* Start animation */
 @keyframes flasing {
   from {
