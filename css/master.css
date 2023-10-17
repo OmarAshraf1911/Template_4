@@ -1151,6 +1151,39 @@ ul {
   }
 }
 
+@media(max-width:767px) {
+  .project-page .project .info {
+    flex-direction: column;
+  }
+}
+
+.project-page .project .info {
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.project-page .project .prog {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media(max-width:767px) {
+  .project-page .project .prog {
+    margin-bottom: 15PX;
+  }
+}
+
+.project-page .project .prog span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+}
+
 /* End project-page */
 
 /* Start animation */
