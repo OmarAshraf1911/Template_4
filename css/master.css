@@ -1185,6 +1185,58 @@ ul {
 }
 
 /* End project-page */
+/* Start Courses Page */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+.courses-page .course {
+  overflow: hidden;
+}
+
+.courses-page .course .cover {
+  max-width: 100%;
+  width: 345px;
+  height: 200px;
+}
+
+.courses-page .course .instructor {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  border: 2px solid white;
+}
+
+.courses-page .course .description {
+  line-height: 1.6;
+}
+
+.courses-page .course .info {
+  border-top: 1px solid #eee;
+  font-size: 13px;
+}
+
+.courses-page .course .info .title {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+}
+
+/* End Courses Page */
 
 /* Start animation */
 @keyframes flasing {
