@@ -1238,6 +1238,66 @@ ul {
 
 /* End Courses Page */
 
+/* Start Friends Page */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+.friends-page .contact {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.friends-page .contact i {
+  color: var(--blue-color);
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.friends-page .contact i:hover {
+  color: white;
+  background-color: var(--blue-color);
+  transform: translatey(5px);
+}
+
+.friends-page .friend .icons {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.friends-page .friend .icons i {
+  color: var(--blue-color);
+  margin-right: 5px;
+}
+
+.friends-page .friend .icons .vip {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.3;
+}
+
+/* End Friends Page */
+
 /* Start animation */
 @keyframes flasing {
   from {
