@@ -1296,6 +1296,18 @@ ul {
   opacity: 0.3;
 }
 
+.friends-page .friend a {
+  transition: var(--main-transition);
+}
+
+.friends-page .friend a.pro:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.friends-page .friend a.rem:hover {
+  background-color: rgb(170, 5, 5);
+}
+
 /* End Friends Page */
 
 /* Start animation */
