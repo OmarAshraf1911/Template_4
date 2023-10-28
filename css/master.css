@@ -1239,6 +1239,18 @@ ul {
 /* End Courses Page */
 
 /* Start File page */
+.files-page {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .files-page {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
 .files-page .file-stats {
   min-width: 260px;
 }
@@ -1281,6 +1293,25 @@ ul {
 
 .files-page .file-stats .upload:hover i {
   animation: go-up 0.8s infinite
+}
+
+.files-page .files-content {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.files-page .files-content img {
+  width: 64px;
+  height: 64px;
+  transition: 0.3s;
+}
+
+.files-page .files-content .file:hover img {
+  transform: rotate(5deg);
+}
+
+.files-page .files-content .info {
+  border-top: 1px solid #eee;
 }
 
 /* End File page */
