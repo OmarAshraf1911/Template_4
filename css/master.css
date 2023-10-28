@@ -1238,6 +1238,77 @@ ul {
 
 /* End Courses Page */
 
+/* Start Friends Page */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+.friends-page .contact {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.friends-page .contact i {
+  color: var(--blue-color);
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.friends-page .contact i:hover {
+  color: white;
+  background-color: var(--blue-color);
+  transform: translatey(5px);
+}
+
+.friends-page .friend .icons {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.friends-page .friend .icons i {
+  color: var(--blue-color);
+  margin-right: 5px;
+}
+
+.friends-page .friend .icons .vip {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.3;
+}
+
+.friends-page .friend a {
+  transition: var(--main-transition);
+}
+
+.friends-page .friend a.pro:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.friends-page .friend a.rem:hover {
+  background-color: rgb(170, 5, 5);
+}
+
+/* End Friends Page */
 /* Start File page */
 .files-page {
   flex-direction: row-reverse;
@@ -1315,13 +1386,13 @@ ul {
 }
 
 /* End File page */
-/* Start Friends Page */
-.friends-page {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+/* Start plan page */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
 @media (max-width: 767px) {
-  .friends-page {
+  .plans-page {
     grid-template-columns: minmax(200px, 1fr);
     margin-left: 10px;
     margin-right: 10px;
@@ -1329,64 +1400,51 @@ ul {
   }
 }
 
-.friends-page .contact {
-  position: absolute;
-  left: 10px;
-  top: 10px;
+.plans-page .plan .top {
+  border: 2px solid #eee;
+  outline: 2px solid transparent;
 }
 
-.friends-page .contact i {
-  color: var(--blue-color);
-  padding: 10px;
-  background-color: #eee;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: var(--main-transition);
+.plans-page .plan.green .top {
+  outline: 2px solid var(--green-color);
 }
 
-.friends-page .contact i:hover {
-  color: white;
-  background-color: var(--blue-color);
-  transform: translatey(5px);
+.plans-page .plan.blue .top {
+  outline: 2px solid var(--blue-color);
 }
 
-.friends-page .friend .icons {
-  border-top: 1px solid #eee;
+.plans-page .plan.orange .top {
+  outline: 2px solid var(--orange-color);
+}
+
+.plans-page .plan ul li {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
   border-bottom: 1px solid #eee;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
-.friends-page .friend .icons i {
-  color: var(--blue-color);
+.plans-page .plan ul li .yes {
+  color: var(--green-color);
+}
+
+.plans-page .plan ul li:inot(.yes, .help) {
+  color: var(--red-color);
+}
+
+.plans-page .plan ul li i:first-child {
+  font-size: 18px;
   margin-right: 5px;
 }
 
-.friends-page .friend .icons .vip {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  opacity: 0.3;
+.plans-page .plan ul li .help {
+  color: var(--grey-color);
+  margin-left: auto;
+  cursor: pointer;
 }
 
-.friends-page .friend a {
-  transition: var(--main-transition);
-}
-
-.friends-page .friend a.pro:hover {
-  background-color: var(--blue-alt-color);
-}
-
-.friends-page .friend a.rem:hover {
-  background-color: rgb(170, 5, 5);
-}
-
-/* End Friends Page */
-
+/* End plan page */
 /* Start animation */
 @keyframes flasing {
   from {
